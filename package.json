@@ -11,6 +11,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "openai": "^4.33.1",
+    "prettier-eslint": "^16.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
