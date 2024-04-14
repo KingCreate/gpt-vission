@@ -68,7 +68,7 @@ function App() {
             <div className="justify-center items-center flex mt-8">
                 <Card className="flex flex-col items-center w-full max-w-[516px]">
                     <CardHeader>AI Image Prompt</CardHeader>
-                    <CardContent className="space-y-2">
+                    <CardContent className="space-y-2 w-full">
                         <Form {...form}>
                             <form
                                 onSubmit={form.handleSubmit(onsubmit)}
