@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react'
+import { cn } from './utils'
 
-const ThemeSwitcher = () => {
+type props = {
+    className?: string
+}
+
+const ThemeSwitcher = (props: props) => {
     const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
@@ -31,7 +36,10 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={toggleDarkMode}
-            className="px-4 py-2 rounded-md bg-gray-800 text-white"
+            className={cn(
+                'px-4 py-2 rounded-md bg-gray-800 text-white',
+                props.className
+            )}
         >
             {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>
